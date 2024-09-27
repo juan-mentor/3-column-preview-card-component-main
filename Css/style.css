@@ -1,0 +1,111 @@
+:root {
+ /********* COLORS **********/
+    /* Primary */
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+        /* paragraphs*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+        /* (background, headings, buttons) */
+    --very-light-gray : hsl(0, 0%, 95%);
+}
+
+html {
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-light-gray);
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards-container {
+    width: 87%;
+    max-width: 96rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    padding: 3rem;
+}
+
+.card--sedans {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card--suvs {
+    background-color: var(--dark-cyan);
+}
+
+.card--luxury {
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--very-dark-cyan);
+}
+
+.card__title {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    font-weight: 700;
+    margin: 2.4rem 0; 
+}
+
+.card__paragraph {
+    line-height: 1.6;
+    color: var(--transparent-white);
+    margin-bottom: 1.7rem;
+}
+
+.card__btn {
+    /* position: relative; */
+    border: 3px solid transparent;
+    font-size: inherit;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color:var(--very-light-gray);
+    color: var(--dark-cyan);
+    font-weight: 700;
+}
+
+.card__btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.card__btn:hover {
+    background-color: transparent;
+    border-color: var(--transparent-white);
+    color: var(--transparent-white);
+}
+
+
