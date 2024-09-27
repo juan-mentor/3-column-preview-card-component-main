@@ -44,21 +44,23 @@ p {
 
 .cards-container {
     width: 87%;
-    max-width: 96rem;
+    max-width: 61rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    outline: 1px solid var(--transparent-white);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .card {
     width: 100%;
-    max-width: 480px;
+    flex: 1;
     padding: 3rem;
 }
 
 .card--sedans {
-    background-color: var(--bright-orange);
-    border-radius: 10px 10px 0 0;
+    background-color: var(--bright-orange); 
 }
 
 .card--suvs {
@@ -66,7 +68,6 @@ p {
 }
 
 .card--luxury {
-    border-radius: 0px 0px 10px 10px;
     background-color: var(--very-dark-cyan);
 }
 
@@ -85,7 +86,6 @@ p {
 }
 
 .card__btn {
-    /* position: relative; */
     border: 3px solid transparent;
     font-size: inherit;
     display: inline-block;
@@ -107,5 +107,3 @@ p {
     border-color: var(--transparent-white);
     color: var(--transparent-white);
 }
-
-
